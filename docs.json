@@ -1,72 +1,589 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
-  "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
-  },
-  "favicon": "/favicon.svg",
-  "navigation": {
-    "pages": [
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
-    ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
-  }
+    "$schema":  "https://mintlify.com/docs.json",
+    "theme":  "mint",
+    "name":  "Essal Help Center",
+    "logo":  {
+                 "light":  "/logo/logo.svg",
+                 "dark":  "/logo/logo.svg",
+                 "href":  "/"
+             },
+    "favicon":  "/favicon.png",
+    "colors":  {
+                   "primary":  "#0066FF",
+                   "light":  "#3D8BFF",
+                   "dark":  "#0050B4"
+               },
+    "background":  {
+                       "style":  "grid"
+                   },
+    "modeToggle":  {
+                       "default":  "dark",
+                       "isHidden":  false
+                   },
+    "css":  "style.css",
+    "anchors":  [
+                    {
+                        "name":  "Developer Docs",
+                        "icon":  "rectangle-terminal",
+                        "url":  "https://docs.essal.cloud"
+                    },
+                    {
+                        "name":  "System Status",
+                        "icon":  "signal",
+                        "url":  "https://status.essal.cloud"
+                    },
+                    {
+                        "name":  "Slack Community",
+                        "icon":  "slack",
+                        "url":  "https://slack.essal.cloud"
+                    }
+                ],
+    "topbarLinks":  [
+                        {
+                            "type":  "github",
+                            "url":  "https://github.com/essal"
+                        },
+                        {
+                            "name":  "Website",
+                            "url":  "https://essal.cloud"
+                        },
+                        {
+                            "name":  "Support",
+                            "url":  "https://support.essal.cloud"
+                        },
+                        {
+                            "name":  "Status",
+                            "url":  "https://status.essal.cloud"
+                        }
+                    ],
+    "topbarCtaButton":  {
+                            "type":  "link",
+                            "name":  "Dashboard",
+                            "url":  "https://admin.essal.cloud",
+                            "style":  "pill",
+                            "arrow":  true
+                        },
+    "feedback":  {
+                     "thumbsRating":  true,
+                     "suggestEdit":  true,
+                     "raiseIssue":  true
+                 },
+    "footerSocials":  {
+                          "github":  "https://github.com/essal",
+                          "facebook":  "https://facebook.com/essal",
+                          "linkedin":  "https://www.linkedin.com/company/essal"
+                      },
+    "footer":  {
+                   "socials":  {
+                                   "github":  "https://github.com/essal",
+                                   "facebook":  "https://facebook.com/essal",
+                                   "linkedin":  "https://www.linkedin.com/company/essal"
+                               },
+                   "links":  [
+                                 {
+                                     "title":  "Apps \u0026 Solutions",
+                                     "items":  [
+                                                   {
+                                                       "label":  "Office",
+                                                       "href":  "https://essal.cloud/products/office"
+                                                   },
+                                                   {
+                                                       "label":  "Access",
+                                                       "href":  "https://essal.cloud/products/access"
+                                                   },
+                                                   {
+                                                       "label":  "Sales",
+                                                       "href":  "https://essal.cloud/products/sales"
+                                                   },
+                                                   {
+                                                       "label":  "Careers",
+                                                       "href":  "https://essal.cloud/products/careers"
+                                                   },
+                                                   {
+                                                       "label":  "Project",
+                                                       "href":  "https://essal.cloud/products/project"
+                                                   },
+                                                   {
+                                                       "label":  "Guard",
+                                                       "href":  "https://essal.cloud/products/guard"
+                                                   }
+                                               ]
+                                 },
+                                 {
+                                     "title":  "Resources",
+                                     "items":  [
+                                                   {
+                                                       "label":  "Help Center",
+                                                       "href":  "https://support.essal.cloud"
+                                                   },
+                                                   {
+                                                       "label":  "Training",
+                                                       "href":  "https://essal.cloud/training"
+                                                   },
+                                                   {
+                                                       "label":  "Security Center",
+                                                       "href":  "https://essal.cloud/security"
+                                                   },
+                                                   {
+                                                       "label":  "Legal Center",
+                                                       "href":  "https://legal.essal.cloud/"
+                                                   },
+                                                   {
+                                                       "label":  "Certifications",
+                                                       "href":  "https://credentials.essal.cloud/"
+                                                   }
+                                               ]
+                                 },
+                                 {
+                                     "title":  "Company",
+                                     "items":  [
+                                                   {
+                                                       "label":  "About Us",
+                                                       "href":  "https://essal.cloud/about"
+                                                   },
+                                                   {
+                                                       "label":  "Careers",
+                                                       "href":  "https://careers.essal.cloud/"
+                                                   },
+                                                   {
+                                                       "label":  "Newsroom",
+                                                       "href":  "https://newsroom.essal.cloud/"
+                                                   },
+                                                   {
+                                                       "label":  "Become a Partner",
+                                                       "href":  "https://essal.cloud/partners"
+                                                   },
+                                                   {
+                                                       "label":  "Brand Assets",
+                                                       "href":  "https://brand.essal.cloud/"
+                                                   },
+                                                   {
+                                                       "label":  "Contact",
+                                                       "href":  "https://essal.cloud/contact"
+                                                   }
+                                               ]
+                                 },
+                                 {
+                                     "title":  "Site Information",
+                                     "items":  [
+                                                   {
+                                                       "label":  "Privacy",
+                                                       "href":  "https://legal.essal.cloud/privacy"
+                                                   },
+                                                   {
+                                                       "label":  "Terms of use",
+                                                       "href":  "https://legal.essal.cloud/terms"
+                                                   },
+                                                   {
+                                                       "label":  "Leave Feedback",
+                                                       "href":  "https://review.essal.cloud/"
+                                                   },
+                                                   {
+                                                       "label":  "Status Page",
+                                                       "href":  "https://status.essal.cloud/"
+                                                   }
+                                               ]
+                                 }
+                             ]
+               },
+    "navigation":  {
+                       "languages":  [
+                                         {
+                                             "language":  "en",
+                                             "name":  "English",
+                                             "tabs":  [
+                                                          {
+                                                              "tab":  "Introduction",
+                                                              "groups":  [
+                                                                             {
+                                                                                 "group":  "Overview",
+                                                                                 "pages":  [
+                                                                                               "introduction/welcome",
+                                                                                               "introduction/contact",
+                                                                                               "introduction/status"
+                                                                                           ]
+                                                                             }
+                                                                         ]
+                                                          },
+                                                          {
+                                                              "tab":  "Office",
+                                                              "groups":  [
+                                                                             {
+                                                                                 "group":  "Getting Started",
+                                                                                 "pages":  [
+                                                                                               "office/getting-started"
+                                                                                           ]
+                                                                             }
+                                                                         ]
+                                                          },
+                                                          {
+                                                              "tab":  "Access",
+                                                              "groups":  [
+                                                                             {
+                                                                                 "group":  "Getting Started",
+                                                                                 "pages":  [
+                                                                                               "access/01-getting-started/01-what-is-essal-access",
+                                                                                               "access/01-getting-started/02-logging-in-and-navigating-dashboard",
+                                                                                               "access/01-getting-started/03-first-time-setup-checklist",
+                                                                                               "access/01-getting-started/04-understanding-user-roles",
+                                                                                               "access/01-getting-started/05-configuring-general-settings",
+                                                                                               "access/01-getting-started/06-setting-up-company-branding",
+                                                                                               "access/01-getting-started/07-inviting-first-users"
+                                                                                           ]
+                                                                             },
+                                                                             {
+                                                                                 "group":  "Employee Management",
+                                                                                 "pages":  [
+                                                                                               "access/02-employee-management/01-adding-a-new-employee",
+                                                                                               "access/02-employee-management/02-editing-an-employee-record",
+                                                                                               "access/02-employee-management/03-uploading-and-managing-employee-photos",
+                                                                                               "access/02-employee-management/04-importing-employees-from-csv",
+                                                                                               "access/02-employee-management/05-employee-status-explained",
+                                                                                               "access/02-employee-management/06-suspending-and-unsuspending-employees",
+                                                                                               "access/02-employee-management/07-managing-departments",
+                                                                                               "access/02-employee-management/08-custom-fields",
+                                                                                               "access/02-employee-management/09-health-and-safety-records",
+                                                                                               "access/02-employee-management/10-bulk-actions"
+                                                                                           ]
+                                                                             },
+                                                                             {
+                                                                                 "group":  "Badge Design \u0026 Templates",
+                                                                                 "pages":  [
+                                                                                               "access/03-badge-design-and-templates/01-badge-designer-overview",
+                                                                                               "access/03-badge-design-and-templates/02-choosing-a-badge-layout",
+                                                                                               "access/03-badge-design-and-templates/03-customizing-badge-colors-and-fonts",
+                                                                                               "access/03-badge-design-and-templates/04-configuring-badge-front",
+                                                                                               "access/03-badge-design-and-templates/05-configuring-badge-back",
+                                                                                               "access/03-badge-design-and-templates/06-using-brandfetch",
+                                                                                               "access/03-badge-design-and-templates/07-ai-theme-suggestions",
+                                                                                               "access/03-badge-design-and-templates/08-previewing-badge-with-real-data"
+                                                                                           ]
+                                                                             },
+                                                                             {
+                                                                                 "group":  "Printing \u0026 Exporting Badges",
+                                                                                 "pages":  [
+                                                                                               "access/04-printing-and-exporting/01-printing-a-single-badge",
+                                                                                               "access/04-printing-and-exporting/02-bulk-printing-multiple-badges",
+                                                                                               "access/04-printing-and-exporting/03-exporting-badges-as-zip",
+                                                                                               "access/04-printing-and-exporting/04-print-settings-reference",
+                                                                                               "access/04-printing-and-exporting/05-troubleshooting-print-quality"
+                                                                                           ]
+                                                                             },
+                                                                             {
+                                                                                 "group":  "Guest Badges",
+                                                                                 "pages":  [
+                                                                                               "access/05-guest-badges/01-what-are-guest-badges",
+                                                                                               "access/05-guest-badges/02-creating-a-guest-badge",
+                                                                                               "access/05-guest-badges/03-sharing-a-guest-badge-link",
+                                                                                               "access/05-guest-badges/04-guest-badge-statuses",
+                                                                                               "access/05-guest-badges/05-bulk-managing-guest-badges",
+                                                                                               "access/05-guest-badges/06-guest-verification-page"
+                                                                                           ]
+                                                                             },
+                                                                             {
+                                                                                 "group":  "Check-In Devices",
+                                                                                 "pages":  [
+                                                                                               "access/06-check-in-devices/01-check-in-app-overview",
+                                                                                               "access/06-check-in-devices/02-registering-a-new-device",
+                                                                                               "access/06-check-in-devices/03-sending-registration-code-via-email",
+                                                                                               "access/06-check-in-devices/04-scan-modes-explained",
+                                                                                               "access/06-check-in-devices/05-understanding-scan-results",
+                                                                                               "access/06-check-in-devices/06-offline-mode",
+                                                                                               "access/06-check-in-devices/07-device-settings",
+                                                                                               "access/06-check-in-devices/08-managing-devices-from-admin-panel",
+                                                                                               "access/06-check-in-devices/09-device-troubleshooting"
+                                                                                           ]
+                                                                             },
+                                                                             {
+                                                                                 "group":  "Tickets",
+                                                                                 "pages":  [
+                                                                                               "access/07-tickets/01-what-are-tickets",
+                                                                                               "access/07-tickets/02-creating-a-ticket",
+                                                                                               "access/07-tickets/03-creating-custom-ticket-types",
+                                                                                               "access/07-tickets/04-ticket-status-and-validity",
+                                                                                               "access/07-tickets/05-revoking-deleting-bulk-tickets",
+                                                                                               "access/07-tickets/06-verifying-a-ticket-via-qr"
+                                                                                           ]
+                                                                             },
+                                                                             {
+                                                                                 "group":  "Employee Portal",
+                                                                                 "pages":  [
+                                                                                               "access/08-employee-portal/01-employee-portal-overview",
+                                                                                               "access/08-employee-portal/02-viewing-your-badge-and-qr-code",
+                                                                                               "access/08-employee-portal/03-viewing-your-profile",
+                                                                                               "access/08-employee-portal/04-editing-your-profile",
+                                                                                               "access/08-employee-portal/05-updating-health-and-safety-info",
+                                                                                               "access/08-employee-portal/06-reporting-a-lost-badge",
+                                                                                               "access/08-employee-portal/07-your-digital-business-card"
+                                                                                           ]
+                                                                             },
+                                                                             {
+                                                                                 "group":  "Public Profiles \u0026 QR Scanning",
+                                                                                 "pages":  [
+                                                                                               "access/09-public-profiles-and-qr-scanning/01-how-public-badge-scanning-works",
+                                                                                               "access/09-public-profiles-and-qr-scanning/02-configuring-the-public-profile-page",
+                                                                                               "access/09-public-profiles-and-qr-scanning/03-access-states-explained",
+                                                                                               "access/09-public-profiles-and-qr-scanning/04-setting-up-2fa-pin",
+                                                                                               "access/09-public-profiles-and-qr-scanning/05-access-schedules",
+                                                                                               "access/09-public-profiles-and-qr-scanning/06-access-zones",
+                                                                                               "access/09-public-profiles-and-qr-scanning/07-scan-logging"
+                                                                                           ]
+                                                                             },
+                                                                             {
+                                                                                 "group":  "Business Cards",
+                                                                                 "pages":  [
+                                                                                               "access/10-business-cards/01-business-cards-overview",
+                                                                                               "access/10-business-cards/02-configuring-the-business-card-template",
+                                                                                               "access/10-business-cards/03-adding-social-links",
+                                                                                               "access/10-business-cards/04-sharing-your-business-card"
+                                                                                           ]
+                                                                             }
+                                                                         ]
+                                                          },
+                                                          {
+                                                              "tab":  "Sales",
+                                                              "groups":  [
+                                                                             {
+                                                                                 "group":  "Getting Started",
+                                                                                 "pages":  [
+                                                                                               "sales/getting-started"
+                                                                                           ]
+                                                                             }
+                                                                         ]
+                                                          },
+                                                          {
+                                                              "tab":  "Careers",
+                                                              "groups":  [
+                                                                             {
+                                                                                 "group":  "Getting Started",
+                                                                                 "pages":  [
+                                                                                               "careers/getting-started"
+                                                                                           ]
+                                                                             }
+                                                                         ]
+                                                          },
+                                                          {
+                                                              "tab":  "Project",
+                                                              "groups":  [
+                                                                             {
+                                                                                 "group":  "Getting Started",
+                                                                                 "pages":  [
+                                                                                               "project/getting-started"
+                                                                                           ]
+                                                                             }
+                                                                         ]
+                                                          },
+                                                          {
+                                                              "tab":  "Guard",
+                                                              "groups":  [
+                                                                             {
+                                                                                 "group":  "Getting Started",
+                                                                                 "pages":  [
+                                                                                               "guard/getting-started"
+                                                                                           ]
+                                                                             }
+                                                                         ]
+                                                          }
+                                                      ]
+                                         },
+                                         {
+                                             "language":  "fr",
+                                             "name":  "Français",
+                                             "tabs":  [
+                                                          {
+                                                              "tab":  "Introduction",
+                                                              "groups":  [
+                                                                             {
+                                                                                 "group":  "Présentation",
+                                                                                 "pages":  [
+                                                                                               "fr/introduction/welcome",
+                                                                                               "fr/introduction/contact",
+                                                                                               "fr/introduction/status"
+                                                                                           ]
+                                                                             }
+                                                                         ]
+                                                          },
+                                                          {
+                                                              "tab":  "Office",
+                                                              "groups":  [
+                                                                             {
+                                                                                 "group":  "Guide de Démarrage",
+                                                                                 "pages":  [
+                                                                                               "fr/office/getting-started"
+                                                                                           ]
+                                                                             }
+                                                                         ]
+                                                          },
+                                                          {
+                                                              "tab":  "Access",
+                                                              "groups":  [
+                                                                             {
+                                                                                 "group":  "Guide de Démarrage",
+                                                                                 "pages":  [
+                                                                                               "fr/access/01-getting-started/01-what-is-essal-access",
+                                                                                               "fr/access/01-getting-started/02-logging-in-and-navigating-dashboard",
+                                                                                               "fr/access/01-getting-started/03-first-time-setup-checklist",
+                                                                                               "fr/access/01-getting-started/04-understanding-user-roles",
+                                                                                               "fr/access/01-getting-started/05-configuring-general-settings",
+                                                                                               "fr/access/01-getting-started/06-setting-up-company-branding",
+                                                                                               "fr/access/01-getting-started/07-inviting-first-users"
+                                                                                           ]
+                                                                             },
+                                                                             {
+                                                                                 "group":  "Gestion des Employés",
+                                                                                 "pages":  [
+                                                                                               "fr/access/02-employee-management/01-adding-a-new-employee",
+                                                                                               "fr/access/02-employee-management/02-editing-an-employee-record",
+                                                                                               "fr/access/02-employee-management/03-uploading-and-managing-employee-photos",
+                                                                                               "fr/access/02-employee-management/04-importing-employees-from-csv",
+                                                                                               "fr/access/02-employee-management/05-employee-status-explained",
+                                                                                               "fr/access/02-employee-management/06-suspending-and-unsuspending-employees",
+                                                                                               "fr/access/02-employee-management/07-managing-departments",
+                                                                                               "fr/access/02-employee-management/08-custom-fields",
+                                                                                               "fr/access/02-employee-management/09-health-and-safety-records",
+                                                                                               "fr/access/02-employee-management/10-bulk-actions"
+                                                                                           ]
+                                                                             },
+                                                                             {
+                                                                                 "group":  "Conception de Badges et Modèles",
+                                                                                 "pages":  [
+                                                                                               "fr/access/03-badge-design-and-templates/01-badge-designer-overview",
+                                                                                               "fr/access/03-badge-design-and-templates/02-choosing-a-badge-layout",
+                                                                                               "fr/access/03-badge-design-and-templates/03-customizing-badge-colors-and-fonts",
+                                                                                               "fr/access/03-badge-design-and-templates/04-configuring-badge-front",
+                                                                                               "fr/access/03-badge-design-and-templates/05-configuring-badge-back",
+                                                                                               "fr/access/03-badge-design-and-templates/06-using-brandfetch",
+                                                                                               "fr/access/03-badge-design-and-templates/07-ai-theme-suggestions",
+                                                                                               "fr/access/03-badge-design-and-templates/08-previewing-badge-with-real-data"
+                                                                                           ]
+                                                                             },
+                                                                             {
+                                                                                 "group":  "Impression et Exportation de Badges",
+                                                                                 "pages":  [
+                                                                                               "fr/access/04-printing-and-exporting/01-printing-a-single-badge",
+                                                                                               "fr/access/04-printing-and-exporting/02-bulk-printing-multiple-badges",
+                                                                                               "fr/access/04-printing-and-exporting/03-exporting-badges-as-zip",
+                                                                                               "fr/access/04-printing-and-exporting/04-print-settings-reference",
+                                                                                               "fr/access/04-printing-and-exporting/05-troubleshooting-print-quality"
+                                                                                           ]
+                                                                             },
+                                                                             {
+                                                                                 "group":  "Badges Invités",
+                                                                                 "pages":  [
+                                                                                               "fr/access/05-guest-badges/01-what-are-guest-badges",
+                                                                                               "fr/access/05-guest-badges/02-creating-a-guest-badge",
+                                                                                               "fr/access/05-guest-badges/03-sharing-a-guest-badge-link",
+                                                                                               "fr/access/05-guest-badges/04-guest-badge-statuses",
+                                                                                               "fr/access/05-guest-badges/05-bulk-managing-guest-badges",
+                                                                                               "fr/access/05-guest-badges/06-guest-verification-page"
+                                                                                           ]
+                                                                             },
+                                                                             {
+                                                                                 "group":  "Terminaux de Pointage",
+                                                                                 "pages":  [
+                                                                                               "fr/access/06-check-in-devices/01-check-in-app-overview",
+                                                                                               "fr/access/06-check-in-devices/02-registering-a-new-device",
+                                                                                               "fr/access/06-check-in-devices/03-sending-registration-code-via-email",
+                                                                                               "fr/access/06-check-in-devices/04-scan-modes-explained",
+                                                                                               "fr/access/06-check-in-devices/05-understanding-scan-results",
+                                                                                               "fr/access/06-check-in-devices/06-offline-mode",
+                                                                                               "fr/access/06-check-in-devices/07-device-settings",
+                                                                                               "fr/access/06-check-in-devices/08-managing-devices-from-admin-panel",
+                                                                                               "fr/access/06-check-in-devices/09-device-troubleshooting"
+                                                                                           ]
+                                                                             },
+                                                                             {
+                                                                                 "group":  "Tickets",
+                                                                                 "pages":  [
+                                                                                               "fr/access/07-tickets/01-what-are-tickets",
+                                                                                               "fr/access/07-tickets/02-creating-a-ticket",
+                                                                                               "fr/access/07-tickets/03-creating-custom-ticket-types",
+                                                                                               "fr/access/07-tickets/04-ticket-status-and-validity",
+                                                                                               "fr/access/07-tickets/05-revoking-deleting-bulk-tickets",
+                                                                                               "fr/access/07-tickets/06-verifying-a-ticket-via-qr"
+                                                                                           ]
+                                                                             },
+                                                                             {
+                                                                                 "group":  "Portail Employé",
+                                                                                 "pages":  [
+                                                                                               "fr/access/08-employee-portal/01-employee-portal-overview",
+                                                                                               "fr/access/08-employee-portal/02-viewing-your-badge-and-qr-code",
+                                                                                               "fr/access/08-employee-portal/03-viewing-your-profile",
+                                                                                               "fr/access/08-employee-portal/04-editing-your-profile",
+                                                                                               "fr/access/08-employee-portal/05-updating-health-and-safety-info",
+                                                                                               "fr/access/08-employee-portal/06-reporting-a-lost-badge",
+                                                                                               "fr/access/08-employee-portal/07-your-digital-business-card"
+                                                                                           ]
+                                                                             },
+                                                                             {
+                                                                                 "group":  "Profils Publics et Scan QR",
+                                                                                 "pages":  [
+                                                                                               "fr/access/09-public-profiles-and-qr-scanning/01-how-public-badge-scanning-works",
+                                                                                               "fr/access/09-public-profiles-and-qr-scanning/02-configuring-the-public-profile-page",
+                                                                                               "fr/access/09-public-profiles-and-qr-scanning/03-access-states-explained",
+                                                                                               "fr/access/09-public-profiles-and-qr-scanning/04-setting-up-2fa-pin",
+                                                                                               "fr/access/09-public-profiles-and-qr-scanning/05-access-schedules",
+                                                                                               "fr/access/09-public-profiles-and-qr-scanning/06-access-zones",
+                                                                                               "fr/access/09-public-profiles-and-qr-scanning/07-scan-logging"
+                                                                                           ]
+                                                                             },
+                                                                             {
+                                                                                 "group":  "Cartes de Visite",
+                                                                                 "pages":  [
+                                                                                               "fr/access/10-business-cards/01-business-cards-overview",
+                                                                                               "fr/access/10-business-cards/02-configuring-the-business-card-template",
+                                                                                               "fr/access/10-business-cards/03-adding-social-links",
+                                                                                               "fr/access/10-business-cards/04-sharing-your-business-card"
+                                                                                           ]
+                                                                             }
+                                                                         ]
+                                                          },
+                                                          {
+                                                              "tab":  "Sales",
+                                                              "groups":  [
+                                                                             {
+                                                                                 "group":  "Guide de Démarrage",
+                                                                                 "pages":  [
+                                                                                               "fr/sales/getting-started"
+                                                                                           ]
+                                                                             }
+                                                                         ]
+                                                          },
+                                                          {
+                                                              "tab":  "Careers",
+                                                              "groups":  [
+                                                                             {
+                                                                                 "group":  "Guide de Démarrage",
+                                                                                 "pages":  [
+                                                                                               "fr/careers/getting-started"
+                                                                                           ]
+                                                                             }
+                                                                         ]
+                                                          },
+                                                          {
+                                                              "tab":  "Project",
+                                                              "groups":  [
+                                                                             {
+                                                                                 "group":  "Guide de Démarrage",
+                                                                                 "pages":  [
+                                                                                               "fr/project/getting-started"
+                                                                                           ]
+                                                                             }
+                                                                         ]
+                                                          },
+                                                          {
+                                                              "tab":  "Guard",
+                                                              "groups":  [
+                                                                             {
+                                                                                 "group":  "Guide de Démarrage",
+                                                                                 "pages":  [
+                                                                                               "fr/guard/getting-started"
+                                                                                           ]
+                                                                             }
+                                                                         ]
+                                                          }
+                                                      ]
+                                         }
+                                     ]
+                   }
 }

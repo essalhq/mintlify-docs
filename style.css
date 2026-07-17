@@ -1,0 +1,4 @@
+/* Hide Powered by Mintlify footer attribution */
+a[href*="mintlify.com?utm_campaign=poweredBy"] {
+  display: none !important;
+}
